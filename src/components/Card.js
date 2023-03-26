@@ -28,7 +28,7 @@ export default function CardComp({
   cardId,
 }) {
   const disPatch = useDispatch();
-  const id = cardIndex;
+ 
   const editCardRef = useRef();
 
   const moveCardFrom = () => {
