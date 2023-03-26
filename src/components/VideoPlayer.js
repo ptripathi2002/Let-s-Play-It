@@ -7,6 +7,7 @@ export default function VideoPlayer({ link }) {
       <DialogContent>
         <Box>
           <iframe
+            title="description"
             style={{ width: "100%", aspectRatio: "1.78" }}
             src={link}
             allowFullScreen
