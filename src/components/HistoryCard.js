@@ -56,9 +56,11 @@ const HistoryCard = ({ id, title, link, time, setModal, index }) => {
       <CardActions>
         <Button size="small" title="Watch again" onClick={handleClick}>
           <Replay />
+          Watch Again
         </Button>
         <Button size="small" title="Delete" onClick={() => handleDelete(index)}>
           <Delete />
+          Delete
         </Button>
       </CardActions>
     </Card>
