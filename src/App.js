@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import BucketView from "./components/BucketView";
+import History from "./components/History";
+import { Routes, Route } from "react-router-dom";
+import SharedLayout from "./components/SharedLayout";
+import Error from "./components/Error";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<SharedLayout />}>
+          <Route index path="/" element={<BucketView />} />
+          <Route path="/history" element={<History />} />
+          <Route path="*" element={<Error />} />
+        </Route>
+      </Routes>
+    </>
   );
 }
 
