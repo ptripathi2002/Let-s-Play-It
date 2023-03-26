@@ -47,7 +47,7 @@ const initialState = {
         {
           id: nanoid(),
           title: "Jaaniye",
-          link: "https://youtube.com/embed/MyNSOu-Fl-k",
+          link: "https://www.youtube.com/embed/H1YR5rsScC8",
         },
         {
           id: nanoid(),
