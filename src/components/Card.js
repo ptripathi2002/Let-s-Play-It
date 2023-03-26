@@ -6,7 +6,7 @@ import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch} from "react-redux";
 import { deleteCard, updateCard, addCard } from "../features/bucketSlice";
 import { ItemTypes } from "../features/dragTypes";
 import { useDrag } from "react-dnd";
